@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  /* Color */
+  --color-primary: #E11D2E;
+  --color-secondary: #EBE9E3;
+  --color-black: #0A0A0A;
+
+  /* Font */
+  --font-heading: "Plus Jakarta Sans", sans-serif;
+  --font-sans: "DM Mono", monospace;
+  --font-mono: "DM Mono", monospace;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--color-secondary);
+  color: var(--color-black);
+}
