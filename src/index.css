@@ -10,8 +10,8 @@
   --font-heading: "Plus Jakarta Sans", sans-serif;
   --font-mono: "DM Mono", monospace;
 
-   /* Fluid typography */
-  --text-18: clamp(16px,15px+0.25vw,18px);
+  /* Fluid typography */
+  --text-18: clamp(16px, 15px + 0.25vw, 18px);
 }
 
 body {
@@ -19,4 +19,38 @@ body {
   font-family: var(--font-mono);
   background: var(--color-secondary);
   color: var(--color-black);
+}
+
+/* hero */
+#hero .title-hero h1 {
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  letter-spacing: -10%;
+  font-size: clamp(48px, 9vw, 93px);
+  text-align: end;
+  font-weight: 900;
+}
+
+@media (max-width: 550px) {
+  #hero .title-hero h1 {
+    line-height: 0.9;
+  }
+}
+
+@media (max-width: 640px) {
+  #hero .title-hero h1,
+  #hero .title-hero p {
+    text-align: center;
+  }
+}
+
+#hero .title-hero p {
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  letter-spacing: -10%;
+  line-height: 1.35;
+  font-size: clamp(32px, 4.5vw, 48px);
+  font-weight: 700;
+  font-style: italic;
+  text-align: end;
 }
