@@ -3,6 +3,8 @@ import Hero from "@/components/organisms/Hero";
 import Card from "@/components/molecules/Card";
 import Text from "@/components/atoms/Text";
 import Button from "@/components/atoms/Button";
+import SpatialHero from "@/components/organisms/SpatialHero";
+import HeroHomepage from "@/components/organisms/HeroHomepage";
 
 export default function Home() {
   const features = [
@@ -22,7 +24,9 @@ export default function Home() {
 
   return (
     <DefaultLayout>
+      <HeroHomepage />
       <Hero />
+      <SpatialHero />
 
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
