@@ -8,13 +8,15 @@
 
   /* Font */
   --font-heading: "Plus Jakarta Sans", sans-serif;
-  --font-sans: "DM Mono", monospace;
   --font-mono: "DM Mono", monospace;
+
+   /* Fluid typography */
+  --text-18: clamp(16px,15px+0.25vw,18px);
 }
 
 body {
   margin: 0;
-  font-family: var(--font-sans);
+  font-family: var(--font-mono);
   background: var(--color-secondary);
   color: var(--color-black);
 }
