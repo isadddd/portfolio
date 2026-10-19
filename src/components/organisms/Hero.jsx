@@ -4,7 +4,7 @@ import Text from "../atoms/Text";
 
 export default function Hero() {
   return (
-    <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-white" data-theme="light">
       {/* Decorative bg circle */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-primary/10 blur-[100px] -z-10" />
 
