@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 
-// Membaca atribut data-theme dari section yang sedang berada di bawah header.
+// Membaca data-theme dan data-label dari section yang sedang berada di bawah header.
 // offset = jarak (px) dari atas layar sebagai garis deteksi (kira-kira tengah header).
 // Section pertama dipakai sebagai cadangan, jadi aman kalau section itu sticky
 // (posisi atasnya tidak pernah mencapai offset).
-// Contoh: <section data-theme="light" className="bg-white">
+// Contoh: <section data-theme="light" data-label="irsyad" className="bg-white">
+// Mengembalikan: { theme, label }
 const useHeaderTheme = (offset = 40) => {
-  const [theme, setTheme] = useState("dark");
+  const [state, setState] = useState({ theme: "dark", label: "" });
 
   useEffect(() => {
     const sections = Array.from(document.querySelectorAll("[data-theme]"));
@@ -16,17 +17,21 @@ const useHeaderTheme = (offset = 40) => {
 
     const update = () => {
       ticking = false;
-      let current = sections[0].dataset.theme; // cadangan: section pertama
+      let current = sections[0]; // cadangan: section pertama
 
       for (const section of sections) {
         const rect = section.getBoundingClientRect();
         // section terakhir (paling atas secara tumpukan) yang melewati garis deteksi
         if (rect.top <= offset && rect.bottom > offset) {
-          current = section.dataset.theme;
+          current = section;
         }
       }
 
-      setTheme(current);
+      const theme = current.dataset.theme;
+      const label = current.dataset.label ?? "";
+
+      // Hindari re-render kalau tidak ada yang berubah
+      setState((prev) => (prev.theme === theme && prev.label === label ? prev : { theme, label }));
     };
 
     const onScroll = () => {
@@ -46,7 +51,7 @@ const useHeaderTheme = (offset = 40) => {
     };
   }, [offset]);
 
-  return theme;
+  return state;
 };
 
 export default useHeaderTheme;
