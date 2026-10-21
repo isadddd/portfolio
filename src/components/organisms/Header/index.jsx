@@ -41,7 +41,7 @@ const Header = () => {
   const menuRef = useRef(null);
 
   const wibTime = useWibTime();
-  const theme = useHeaderTheme();
+  const { theme, label } = useHeaderTheme();
   const t = themes[theme] ?? themes.dark;
 
   // Tutup dropdown saat klik di luar area menu
@@ -56,19 +56,24 @@ const Header = () => {
   }, []);
 
   return (
-    <nav
-      className={`sticky top-0 z-50 transition-colors duration-300 ${t.text}`}
-    >
+    <nav className={`sticky top-0 z-50 transition-colors duration-300 ${t.text}`}>
       <div className="w-full px-4 py-6">
         <div className="flex items-center justify-between">
-          <img src={Icon} alt="Icon Header" />
+          {/* Kiri: logo + label section aktif (dari data-label) */}
+          <div className="flex items-center gap-6">
+            <img src={Icon} alt="Icon Header" />
+            {label && (
+              <div className="flex items-center gap-3 font-heading text-18 font-bold">
+                <span className="h-px w-8 bg-current" />
+                <ScrambleText key={label} text={label} duration={1800} italicSpacing="-0.1em" autoPlay />
+              </div>
+            )}
+          </div>
+
           <div className="flex items-center gap-6 relative" ref={menuRef}>
             <p className="text-18 hidden md:block">{wibTime} SOLO, ID</p>
             <div className="relative">
-              <p
-                className="cursor-pointer text-18"
-                onClick={() => setIsOpen((prev) => !prev)}
-              >
+              <p className="cursor-pointer text-18" onClick={() => setIsOpen((prev) => !prev)}>
                 <ScrambleText text="MENU" />
               </p>
               {/* Dropdown Menu */}
@@ -83,17 +88,8 @@ const Header = () => {
                           onClick={() => setIsOpen(false)}
                         >
                           <span className="opacity-0 transition-opacity duration-200 group-hover:opacity-100">
-                            <svg
-                              width="11"
-                              height="13"
-                              viewBox="0 0 11 13"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M10.5 6.0625L0 12.1247V0.000322342L10.5 6.0625Z"
-                                fill="currentColor"
-                              />
+                            <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M10.5 6.0625L0 12.1247V0.000322342L10.5 6.0625Z" fill="currentColor" />
                             </svg>
                           </span>
                           <span>{link.label}</span>

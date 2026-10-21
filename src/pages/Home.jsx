@@ -5,26 +5,13 @@ import Text from "@/components/atoms/Text";
 import Button from "@/components/atoms/Button";
 import SpatialHero from "@/components/organisms/SpatialHero";
 import HeroHomepage from "@/components/organisms/HeroHomepage";
+import AboutSection from "@/components/organisms/AboutSection";
 
 export default function Home() {
-  const features = [
-    {
-      title: "React",
-      desc: "Building interactive UIs with the latest React 19 features.",
-    },
-    {
-      title: "Tailwind CSS",
-      desc: "Utility-first CSS for rapid and consistent styling.",
-    },
-    {
-      title: "Vite",
-      desc: "Fast dev server and optimized production builds.",
-    },
-  ];
-
   return (
     <DefaultLayout>
       <HeroHomepage />
+      <AboutSection />
       <Hero />
       <SpatialHero />
     </DefaultLayout>
