@@ -14,6 +14,10 @@
   --text-18: clamp(16px, 15px + 0.25vw, 18px);
 }
 
+:root {
+  --header-h: 79px;
+}
+
 body {
   margin: 0;
   font-family: var(--font-mono);
@@ -25,7 +29,7 @@ body {
 #hero .title-hero h1 {
   color: var(--color-primary);
   font-family: var(--font-heading);
-  letter-spacing: -10%;
+  letter-spacing: -0.1em;
   font-size: clamp(48px, 9vw, 93px);
   text-align: end;
   font-weight: 900;
@@ -40,16 +44,16 @@ body {
 @media (max-width: 640px) {
   #hero .title-hero h1,
   #hero .title-hero p {
-    text-align: center;
+    text-align: center !important;
   }
 }
 
 #hero .title-hero p {
   color: var(--color-primary);
   font-family: var(--font-heading);
-  letter-spacing: -10%;
+  letter-spacing: -0.1em;
   line-height: 1.35;
-  font-size: clamp(32px, 4.5vw, 48px);
+  font-size: clamp(28px, 4.5vw, 48px);
   font-weight: 800;
   font-style: italic;
   text-align: end;

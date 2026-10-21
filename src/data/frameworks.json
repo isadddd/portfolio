@@ -1,0 +1,52 @@
+[
+  {
+    "id": "wordpress",
+    "name": "WordPress",
+    "src": "/framework/wp.svg",
+    "srcBnw": "/framework-bnw/wp.svg",
+    "className": "hidden md:block md:left-[82%] md:top-[38%] md:w-[6%]",
+    "rotate": "md:rotate-6",
+    "at": 0.1,
+    "colorShadow": "#00769D66"
+  },
+  {
+    "id": "vue",
+    "name": "Vue.js",
+    "src": "/framework/vue.svg",
+    "srcBnw": "/framework-bnw/vue.svg",
+    "className": "hidden md:block md:left-[75%] md:top-[12%] md:w-[4.5%]",
+    "rotate": "md:-rotate-12",
+    "at": 0.28,
+    "colorShadow": "#41B88366"
+  },
+  {
+    "id": "laravel",
+    "name": "Laravel",
+    "src": "/framework/laravel.svg",
+    "srcBnw": "/framework-bnw/laravel.svg",
+    "className": "hidden md:block md:left-[60%] md:top-[5%] md:w-[3.5%]",
+    "rotate": "md:rotate-12",
+    "at": 0.46,
+    "colorShadow": "#FF2D2066"
+  },
+  {
+    "id": "react",
+    "name": "React",
+    "src": "/framework/react.svg",
+    "srcBnw": "/framework-bnw/react.svg",
+    "className": "left-[8%] bottom-[5%] w-[14%] md:bottom-auto md:left-[58%] md:top-[85%] md:w-[4%]",
+    "rotate": "-rotate-6 md:-rotate-12",
+    "at": 0.64,
+    "colorShadow": "#61DAFB66"
+  },
+  {
+    "id": "shopify",
+    "name": "Shopify",
+    "src": "/framework/shopify.svg",
+    "srcBnw": "/framework-bnw/shopify.svg",
+    "className": "right-[8%] bottom-[8%] w-[16%] md:bottom-auto md:right-auto md:left-[75%] md:top-[68%] md:w-[5.9%]",
+    "rotate": "rotate-6 md:rotate-6",
+    "at": 0.82,
+    "colorShadow": "#95BF4666"
+  }
+]

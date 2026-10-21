@@ -60,12 +60,12 @@ const Header = () => {
       <div className="w-full px-4 py-6">
         <div className="flex items-center justify-between">
           {/* Kiri: logo + label section aktif (dari data-label) */}
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-3 md:gap-6">
             <img src={Icon} alt="Icon Header" />
             {label && (
-              <div className="flex items-center gap-3 font-heading text-18 font-bold">
-                <span className="h-px w-8 bg-current" />
-                <ScrambleText key={label} text={label} duration={1800} italicSpacing="-0.1em" autoPlay />
+              <div className="flex items-center gap-1.5 md:gap-3 font-heading text-18 font-bold">
+                <span className="h-px w-3 md:w-8 bg-current" />
+                <ScrambleText key={label} text={label} duration={1000} italicSpacing="-0.1em" autoPlay />
               </div>
             )}
           </div>
