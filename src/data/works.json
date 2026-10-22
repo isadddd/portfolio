@@ -1,0 +1,76 @@
+[
+  {
+    "id": "ilmu-silat",
+    "slug": "ilmu-silat",
+    "title": "work 1 ilmu silat",
+    "year": 2026,
+    "media": { "type": "image", "src": "https://picsum.photos/seed/silat/1200/750" },
+    "type": "e-commerce",
+    "role": "frontend developer",
+    "at": "made indonesia",
+    "builtOn": "shopify",
+    "excerpt": "Karena proyekmu banyak di WordPress dan Shopify, platformnya sendiri sudah informasi penting bagi calon klien.",
+    "description": "Deskripsi panjang untuk halaman detail.",
+    "gallery": []
+  },
+  {
+    "id": "tanah-liat",
+    "slug": "kerajinan-tanah-liat",
+    "title": "kerajinan tanah liat",
+    "year": 2026,
+    "media": {
+      "type": "video",
+      "src": "/works/tanah-liat.mp4",
+      "poster": "https://picsum.photos/seed/tanah/1200/750"
+    },
+    "type": "company profile",
+    "role": "frontend developer",
+    "at": "freelance",
+    "builtOn": "wordpress",
+    "excerpt": "Dummy excerpt kedua.",
+    "description": "Deskripsi panjang untuk halaman detail.",
+    "gallery": []
+  },
+  {
+    "id": "sayur",
+    "slug": "menanam-sayur",
+    "title": "menanam sayur",
+    "year": 2026,
+    "media": { "type": "image", "src": "https://picsum.photos/seed/sayur/1200/750" },
+    "type": "landing page",
+    "role": "frontend developer",
+    "at": "freelance",
+    "builtOn": "vue.js",
+    "excerpt": "Dummy excerpt ketiga.",
+    "description": "Deskripsi panjang untuk halaman detail.",
+    "gallery": []
+  },
+  {
+    "id": "adu-jotos",
+    "slug": "adu-jotos",
+    "title": "adu jotos",
+    "year": 2026,
+    "media": { "type": "image", "src": "https://picsum.photos/seed/jotos/1200/750" },
+    "type": "web app",
+    "role": "frontend developer",
+    "at": "freelance",
+    "builtOn": "react",
+    "excerpt": "Dummy excerpt keempat.",
+    "description": "Deskripsi panjang untuk halaman detail.",
+    "gallery": []
+  },
+  {
+    "id": "pekerjaan-berat",
+    "slug": "pekerjaan-berat",
+    "title": "pekerjaan berat",
+    "year": 2026,
+    "media": { "type": "image", "src": "https://picsum.photos/seed/berat/1200/750" },
+    "type": "e-commerce",
+    "role": "frontend developer",
+    "at": "freelance",
+    "builtOn": "laravel",
+    "excerpt": "Dummy excerpt kelima.",
+    "description": "Deskripsi panjang untuk halaman detail.",
+    "gallery": []
+  }
+]
