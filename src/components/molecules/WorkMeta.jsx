@@ -1,3 +1,5 @@
+import ButtonLink from "@/components/atoms/ButtonLink";
+
 const ROWS = [
   ["type", "type"],
   ["role", "role"],
@@ -20,6 +22,9 @@ const WorkMeta = ({ work }) => (
       ))}
     </dl>
     <p className="mt-2 line-clamp-3">{work.excerpt}</p>
+    <div className="mt-4 block md:hidden">
+      <ButtonLink href={`/works/${work.slug}`}>view project</ButtonLink>
+    </div>
   </div>
 );
 
