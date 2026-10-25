@@ -4,8 +4,8 @@ import frameworks from "@/data/frameworks.json";
 import { ABOUT_TEXT } from "@/config/about";
 import { useAboutReveal } from "@/hooks/useAboutReveal";
 import { useCursorTooltip } from "@/hooks/useCursorTooltip";
-import CursorTooltip from "@/components/atoms/CursorTooltip";
-import FrameworkBadge from "@/components/molecules/FrameworkBadge";
+import CursorTooltip from "@/components/atoms/About/CursorTooltip";
+import FrameworkBadge from "@/components/molecules/About/FrameworkBadge";
 
 const AboutSection = ({ text = ABOUT_TEXT }) => {
   const trackRef = useRef(null);
@@ -23,7 +23,7 @@ const AboutSection = ({ text = ABOUT_TEXT }) => {
       className="relative z-10 bg-secondary"
     >
       {/* Track: tinggi total menentukan seberapa lama scroll untuk mengungkap teks */}
-      <div ref={trackRef} className="h-[300vh]">
+      <div ref={trackRef} className="h-[310vh]">
         <div className="sticky top-(--header-h) flex h-[calc(100svh-var(--header-h))] items-center px-4 md:px-[50px]">
           <div className="mx-auto w-full">
             <div className="max-w-[1017px]">

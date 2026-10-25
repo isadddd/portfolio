@@ -23,8 +23,8 @@ const CustomCursor = () => {
     };
 
     const loop = () => {
-      cx += (x - cx) * 0.2; // 0.2 = kehalusan
-      cy += (y - cy) * 0.2;
+      cx += (x - cx) * 0.3; // 0.2 = kehalusan
+      cy += (y - cy) * 0.3;
       el.style.translate = `${cx}px ${cy}px`;
       raf = requestAnimationFrame(loop);
     };

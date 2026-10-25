@@ -1,4 +1,4 @@
-import ArrowIcon from "@/components/atoms/ArrowIcon";
+import ArrowIcon from "@/components/atoms/Works/ArrowIcon";
 
 const ButtonLink = ({ href, children }) => (
   <a href={href} className="group inline-flex items-center gap-2 bg-secondary px-4 py-2.5 font-mono text-[14px] leading-none text-black transition-colors duration-300 hover:bg-primary hover:text-secondary">

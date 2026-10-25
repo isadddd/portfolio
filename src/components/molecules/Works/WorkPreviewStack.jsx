@@ -1,4 +1,4 @@
-import WorkMedia from "@/components/atoms/WorkMedia";
+import WorkMedia from "@/components/atoms/Works/WorkMedia";
 import { WORKS_STACK } from "@/config/works";
 
 // Rasio card. Ubah di sini saja, aspect-ratio dan rumus lebar ikut berubah.
