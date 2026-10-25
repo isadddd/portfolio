@@ -4,9 +4,9 @@ import works from "@/data/works.json";
 import { getStill } from "@/config/works";
 import { useWorksPreview } from "@/hooks/useWorksPreview";
 import { useCanHover } from "@/hooks/useMediaQuery";
-import WorkListItem from "@/components/molecules/WorkListItem";
-import WorkMeta from "@/components/molecules/WorkMeta";
-import WorkPreviewStack from "@/components/molecules/WorkPreviewStack";
+import WorkListItem from "@/components/molecules/Works/WorkListItem";
+import WorkMeta from "@/components/molecules/Works/WorkMeta";
+import WorkPreviewStack from "@/components/molecules/Works/WorkPreviewStack";
 
 const DEFAULT_INDEX = 0;
 

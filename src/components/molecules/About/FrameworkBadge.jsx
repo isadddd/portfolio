@@ -1,4 +1,4 @@
-import FrameworkIcon from "@/components/atoms/FrameworkIcon";
+import FrameworkIcon from "@/components/atoms/About/FrameworkIcon";
 
 const FrameworkBadge = ({ framework, animRef, onHover, onMove, onLeave }) => {
   const { name, src, srcBnw, colorShadow, className, rotate } = framework;
