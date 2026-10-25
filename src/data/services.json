@@ -1,0 +1,37 @@
+[
+  {
+    "id": "company-profile",
+    "title": "company profile",
+    "lead": "A website that introduces your business clearly:",
+    "detail": "who you are, what you offer, and how to reach you.",
+    "goodFor": "businesses that need to look professional online."
+  },
+  {
+    "id": "e-commerce",
+    "title": "e-commerce",
+    "lead": "An online store that is easy to browse and buy from:",
+    "detail": "products, cart, and checkout.",
+    "goodFor": "brands that want to sell directly to customers."
+  },
+  {
+    "id": "landing-page",
+    "title": "landing page",
+    "lead": "A single focused page built to convert:",
+    "detail": "one message, one clear action.",
+    "goodFor": "campaigns, launches, and events."
+  },
+  {
+    "id": "redesign-maintenance",
+    "title": "redesign & maintenance",
+    "lead": "A fresh look and steady upkeep for an existing site:",
+    "detail": "faster, cleaner, and kept up to date.",
+    "goodFor": "sites that feel outdated or neglected."
+  },
+  {
+    "id": "custom-frontend",
+    "title": "custom frontend",
+    "lead": "Pixel-accurate interfaces built from your design:",
+    "detail": "components, animation, and responsive layouts.",
+    "goodFor": "teams that already have a design and need it built."
+  }
+]
