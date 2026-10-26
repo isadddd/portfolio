@@ -3,7 +3,7 @@ import ServiceDescription from "@/components/molecules/Services/ServiceDescripti
 const Row = ({ number, title }) => (
   <>
     <span className="font-mono text-[20px] font-medium md:text-[32px]">{number}</span>
-    <span className="font-heading text-[clamp(30px,8vw,64px)] leading-[0.9] font-bold tracking-[-0.1em] md:leading-[55px]">{title}</span>
+    <span className="font-heading text-[clamp(30px,8vw,80px)] leading-[1] font-bold tracking-[-0.1em]">{title}</span>
   </>
 );
 
