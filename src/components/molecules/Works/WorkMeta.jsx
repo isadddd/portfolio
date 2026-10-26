@@ -23,7 +23,9 @@ const WorkMeta = ({ work }) => (
     </dl>
     <p className="mt-2 line-clamp-3">{work.excerpt}</p>
     <div className="mt-4 block md:hidden">
-      <ButtonLink href={`/works/${work.slug}`}>view project</ButtonLink>
+      <a href={`/works/${work.slug}`}>[{" "}
+            <span className="underline underline-offset-2">view project</span>{" "}
+            ]</a>
     </div>
   </div>
 );
