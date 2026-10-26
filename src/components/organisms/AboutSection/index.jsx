@@ -26,8 +26,11 @@ const AboutSection = ({ text = ABOUT_TEXT }) => {
       <div ref={trackRef} className="h-[310vh]">
         <div className="sticky top-(--header-h) flex h-[calc(100svh-var(--header-h))] items-center px-4 md:px-[50px]">
           <div className="mx-auto w-full">
-            <div className="max-w-[1017px]">
-              <p ref={textRef} className="text-primary text-[clamp(18px,2.4vw,32px)]">
+            <div className="max-w-254.25">
+              <p
+                ref={textRef}
+                className="text-primary text-[clamp(18px,2.4vw,32px)]"
+              >
                 {text}
               </p>
             </div>
